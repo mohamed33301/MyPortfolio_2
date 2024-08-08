@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-header{
+
+header {
     background-color: rgb(132, 134, 125);
     width: 100%;
     position: fixed;
@@ -15,78 +17,87 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 200px;
-     opacity: .6;
+    opacity: .6;
 }
+
 /* .header a{
    
 } */
-.logo{
+.logo {
     text-decoration: none;
     color: blue;
     text-transform: uppercase;
-    font-size: 1.8em;
-    font-weight: 500;
+    font-size: 1.0em;
+    font-weight: 400;
 
 }
-  .navigation {
-      display: flex;
-      align-items: center;
-  }
- .navigation a {
-     position: relative;
-     display: flex;
-     align-items: center;
-     margin: 0 8px;
-     text-decoration: none;
-     color: #fff;
- }
 
- .navigation a .icon {
-     display: inline-block;
-     width: 30px;
-     height: 30px;
-     background-color: #000;
-     /* خلفية سوداء */
-     border-radius: 4px;
-     text-align: center;
-     line-height: 30px;
-     margin-right: 5px;
-     font-size: 16px;
-     color: #fff;
-     /* لون الأيقونات أبيض */
- }
+.navigation {
+    display: flex;
+    align-items: center;
+}
 
- .navigation a .text {
-     color: #fff;
-     /* لون النص أبيض */
- }
-.main{
+.navigation a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 6px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    /* خلفية سوداء */
+    border-radius: 3px;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 3px;
+    font-size: 12px;
+    color: #fff;
+    /* لون الأيقونات أبيض */
+}
+
+.navigation a .text {
+    font-size: 10px;
+    color: #fff;
+    /* لون النص أبيض */
+}
+
+.main {
     width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url("../images/Mohamed Mohsen.jpg") no-repeat ;
+    background: url("../images/Mohamed Mohsen.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
-section{
+
+section {
     padding: 100px 200px;
 }
-.main h2{
-color: azure;
-font-size: 1.4em;
-font-weight: 500;
+
+.main h2 {
+    color: azure;
+    font-size: 1.4em;
+    font-weight: 500;
 
 }
-.main h2 span{
+
+.main h2 span {
     display: inline-block;
     margin-top: 10px;
     color: blue;
     font-size: 3em;
     font-weight: 600;
 }
-.main h3{
+
+.main h3 {
     color: white;
     font-size: 2em;
     font-weight: 700;
@@ -94,6 +105,7 @@ font-weight: 500;
     margin-top: 10px;
     margin-bottom: 30px;
 }
+
 .main-btn {
     color: azure;
     background-color: blue;
@@ -107,15 +119,18 @@ font-weight: 500;
     margin-bottom: 40px;
     transition: .4s ease;
 }
+
 .main-btn:hover {
-background-color: #2727df;
-transform: scale(1.05);
+    background-color: #2727df;
+    transform: scale(1.05);
 }
-.social-icons a{
-color:white ;
-font-size: 2.7em;
-padding-right: 30px;
+
+.social-icons a {
+    color: white;
+    font-size: 2.7em;
+    padding-right: 30px;
 }
+
 /* تكبير حجم الأيقونات */
 .social-media a {
     font-size: 32px;
@@ -145,7 +160,8 @@ padding-right: 30px;
 .social-media a {
     display: inline-block;
 }
-.title{
+
+.title {
     display: flex;
     justify-content: center;
     color: blue;
@@ -153,6 +169,7 @@ padding-right: 30px;
     font-weight: 800;
     margin-bottom: 30px;
 }
+
 .project-image img {
     width: 100%;
     /* هذا سيجعل الصورة تشغل عرض الكارد بالكامل */
@@ -161,6 +178,7 @@ padding-right: 30px;
     height: auto;
     /* للحفاظ على نسبة العرض إلى الارتفاع */
 }
+
 .project-info .project-title span {
     font-size: 12px;
     /* تكبير النص */
@@ -175,13 +193,15 @@ padding-right: 30px;
     font-size: 8px;
     /* تكبير الرابط */
 }
-.content{
-    display: flex; 
+
+.content {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 }
-.card{
+
+.card {
     background-color: beige;
     width: 21.25em;
     box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
@@ -190,30 +210,37 @@ padding-right: 30px;
     margin: 50px;
     transition: .4s ease;
 }
-.card:hover{
-    transform:scale(1.1) ;
+
+.card:hover {
+    transform: scale(1.1);
 }
-.icon{
+
+.icon {
     color: blue;
     font-size: 6em;
     text-align: center;
 }
-.info{
+
+.info {
     text-align: center;
 }
-.info h3{
+
+.info h3 {
     color: blue;
     font-size: 1.2em;
     font-weight: 700;
     margin: 10px;
 }
-.projects{
+
+.projects {
     background-color: rgb(78, 75, 75);
 }
-.projects .content{
+
+.projects .content {
     margin-top: 30px;
 }
-.project-card{
+
+.project-card {
     background-color: aliceblue;
     border: 1px solid white;
     min-height: 14em;
@@ -223,25 +250,30 @@ padding-right: 30px;
     margin: 20px;
     transition: .7s ease;
 }
+
 .project-card:hover {
     transform: scale(1.1);
 }
-.project-card:hover .project-image{
+
+.project-card:hover .project-image {
     opacity: .7;
 }
-.project-image img{
-width: 100%;
+
+.project-image img {
+    width: 100%;
 }
-.project-info{
-    padding:1em;
+
+.project-info {
+    padding: 1em;
 
 }
-.project-category
-{
+
+.project-category {
     font-size: .8em;
     color: rgb(7, 6, 6);
 }
-.project-title{
+
+.project-title {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
@@ -249,102 +281,126 @@ width: 100%;
     margin-top: 10px;
 
 }
-.cards .title:hover{
+
+.cards .title:hover {
     color: #6565ca;
-  
-}
-.projects .title:hover{
-    color: #6565ca;
-  
-}
-.cards-contact .title:hover{
-    color: #6565ca;
-  
+
 }
 
-.more-details{
+.projects .title:hover {
+    color: #6565ca;
+
+}
+
+.cards-contact .title:hover {
+    color: #6565ca;
+
+}
+
+.more-details {
     text-decoration: none;
     color: #2727df;
 }
-.more-details:hover{
+
+.more-details:hover {
     color: darkblue;
 }
-.contact .icon{
+
+.contact .icon {
     font-size: 4.5em;
 }
-.contact .info h3{
-color: #000;
+
+.contact .info h3 {
+    color: #000;
 }
-.contact .info p{
+
+.contact .info p {
     font-size: 1.5em;
 }
-.footer{
-   background-color:  black;
-   padding: 2px;
-   color: white;
-   display: flex;
-   justify-content: space-between;
+
+.footer {
+    background-color: black;
+    padding: 2px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
 }
-.footer-title{
+
+.footer-title {
     font-size: 1.3em;
     font-weight: 600;
 
 }
-.footer-title span{
+
+.footer-title span {
     color: #2727df;
 }
-.footer .social-icons a{
+
+.footer .social-icons a {
     font-size: 1.3em;
     padding: 0 12px 0 0;
 }
-@media (max-width:1023px){
-    header{
+
+@media (max-width:1023px) {
+    header {
         padding: 12px 20px;
     }
-    .navigation a{
+
+    .navigation a {
         padding-left: 10px;
     }
-    .title{
+
+    .title {
         font-size: 1.8;
 
     }
-    section{
+
+    section {
         padding: 80px 20px;
     }
-    .main-content h2{
+
+    .main-content h2 {
         font-size: 1em;
     }
-    .main-content h3{
+
+    .main-content h3 {
         font-size: 1.6em;
     }
-    .content{
+
+    .content {
         flex-direction: column;
         align-items: center;
     }
 
 }
-@media (max-width:641px){
-    body{
+
+@media (max-width:641px) {
+    body {
         font-size: 12px;
     }
-    .main-content h2{
+
+    .main-content h2 {
         font-size: .8em;
 
     }
-    .main-content h3{
+
+    .main-content h3 {
         font-size: 1.4em;
 
     }
 }
-@media (max-width:300px){
-    body{
+
+@media (max-width:300px) {
+    body {
         font-size: 10px;
     }
-    .main-content h2{
+
+    .main-content h2 {
         font-size: .8em;
 
     }
-    .main-content h3{
+
+    .main-content h3 {
         font-size: 1.4em;
 
     }
